@@ -3,7 +3,7 @@ Style sheet for Joystick. One stylesheet to rule them all.
 Made by Lilith Luce. 
 */
 
-/* General styles*/
+/* Initialize general styles*/
 body, h2, h3, h4, h5, h6, p{
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
@@ -15,9 +15,6 @@ h1{
     font-family: 'Teko', sans-serif;
     font-size: 80px;
     line-height: 20px;
-    text-align: center;
-    max-width: 420px;
-    text-shadow: 4px 4px 8px black;
 }
 body{
     background-color: #262626;
@@ -26,7 +23,7 @@ body{
     margin: 0px;
 }
 
-/* Section styles*/
+/* Section styling*/
 header{
     width: 100%;
     height: 100%;
@@ -51,25 +48,48 @@ nav{
     flex-direction: row;
     width: 100%;
 }
-.flex-container-q{
-    display: flex;
-    flex-direction: row;
-    padding: 0px, 84px, 84px, 70px;
+.container-q{
+    display: inherit;
+    flex-direction: inherit;
     justify-content: center;
     width: 25%;
 }
-.flex-container-hl{
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
+.container-h80{
+    display: inherit;
+    flex-direction: inherit;
     justify-content: center;
-    width: 50%;
+    width: 80%;
 }
 
-/* IDs */
-#featured-carosel{
-    width: 8rem;
+/* IDs or specific elements tied to them. */
+#avatar{
+    border-radius: 50%;
+    border: 4px solid #00AAAA;
+}
+#sitename{
+    text-align: center;
+    text-shadow: 4px 4px 8px black;
+    margin: 0px 40px 0px 80px;
+}
+#featured{
+    margin: auto;
     height: 360px;
+}
+#deals-snapshot{
+    margin: auto;
+    height: 1000px;
+    background-color: #36464F;
+    align-content: center;    
+}
+/* #deals-snapshot>h2{ }*/
+#coupon-code-cards{
+    margin: auto;
+    height: 600px;
+}
+#bundles-list{
+    margin: auto;
+    height: 1300px;
+    background-color: #36464F;
 }
 
 /*Specific classes*/
@@ -91,9 +111,7 @@ nav.flex-container > a{
     margin: auto;
     transition-duration: 300ms; 
 }
-.flex-container>a:hover{
-    background-color:rgba(0, 170, 170, .3);
-}
+.flex-container>a:hover{ background-color:rgba(0, 170, 170, .3);}
 .flex-container>a:active{
     text-decoration:underline;
     width: 160px;
