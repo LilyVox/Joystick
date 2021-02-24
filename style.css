@@ -42,23 +42,20 @@ nav{
 .top-pad{margin-top: 19px;}
 .left-pad{padding-left: 1rem;}
 
+
 /*Containers*/
-.flex-container{
+.flex-container, .container-q, .container-h80, article.container-h80>div{
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-.container-q{
-    display: inherit;
-    flex-direction: inherit;
-    justify-content: center;
-    width: 25%;
-}
-.container-h80{
-    display: inherit;
-    flex-direction: inherit;
+.container-h80, article.container-h80>div{
     justify-content: center;
     width: 80%;
+}
+.container-q{
+    justify-content: center;
+    width: 25%;
 }
 
 /* IDs or specific elements tied to them. */
@@ -71,10 +68,24 @@ nav{
     text-shadow: 4px 4px 8px black;
     margin: 0px 40px 0px 80px;
 }
-#featured{
-    margin: auto;
+#features-box{
+    object-fit: contain;
+    background-clip: border-box;
+    margin: 60px auto;
     height: 360px;
+    box-shadow: 2px 2px 6px black;
 }
+#featured{
+    align-items: flex-start;
+
+}
+/* Trying to enclose the images and use background-clip to hide unnecessary parts. 
+Photoshop + map it would be way easier. 
+#featured>img:first-of-type{
+
+}
+*/
+
 #deals-snapshot{
     margin: auto;
     height: 1000px;
@@ -109,7 +120,7 @@ nav.flex-container > a{
     font-weight: bold;
     border-radius: 4px;
     margin: auto;
-    transition-duration: 300ms; 
+    transition-duration: 100ms; 
 }
 .flex-container>a:hover{ background-color:rgba(0, 170, 170, .3);}
 .flex-container>a:active{
