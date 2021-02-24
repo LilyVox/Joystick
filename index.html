@@ -16,18 +16,18 @@
       <header>
         <!-- Title bar with search.-->
         <div class="logo-bar flex-container">
-            <div class="flex-container-q">
+            <div class="container-q" id="sitename">
             <strong><h1>Joystick</h1></strong>
             </div>
         <!-- Search bar -->
-            <div class="flex-container-hl top-pad">
+            <div class="container-h80 top-pad">
                 <form>
                 <input type="text" placeholder="Search...">
                 </form>
             </div>
         <!-- Avatar display -->
-            <div class="flex-container-q">
-                <img src="/images/icons/useravatar.svg">
+            <div class="container-q">
+                <img src="images/icons/useravatar.jpg" id="avatar">
             </div>
         </div>
 
@@ -41,29 +41,33 @@
       </header>
     <main>
 
-    <section title="Featured this week!" id="#featured-carousel">
-        <article>
-            <h2>featured</h2>
-
+    <section class="flex-container" title="Featured this week!">
+        <h2>featured</h2>
+        <article class="container-h80" id="features-box">
+            <div id="featured">
+                <img src="images/graphics/game1.png" alt="Featured game deals.">
+                <img src="images/graphics/game2.png" alt="Other featured game deal">
+                <img src="images/graphics/gamefree.png" alt="Free for a limited time!">
+            </div>  
         </article>
     </section>
 
-    <section title="Hot deals you don't wanna miss!" id="#deals-snapshot">
-        <article>
+    <section title="Hot deals you don't wanna miss!">
+        <article class="container-h80" id="deals-snapshot">
             <h2>deals</h2>
 
         </article>
     </section>
 
-    <section title="Coupons for the biggest bargain!" id="#coupon-code-cards">
-        <article>
+    <section title="Coupons for the biggest bargain!">
+        <article class="container-h80" id="coupon-code-cards">
             <h2>coupons</h2>
 
         </article>
     </section>
 
-    <section title="Bundles of the best games!" id="#bundles-list">
-        <article>
+    <section title="Bundles of the best games!">
+        <article class="container-h80" id="bundles-list">
             <h2>bundles</h2>
             
         </article>
@@ -73,6 +77,6 @@
     <footer>
 
     </footer>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script>-->
   </body>
 </html>
